@@ -1,0 +1,53 @@
+
+// Import utilities
+
+@import "../utilities/fonts";
+@import "../utilities/variables";
+@import "../utilities/styles-guul";
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content:center;
+
+    #footer-container {
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .socialbutton {
+        padding: 10px 5px 30px 5px;
+        margin: 5px;
+        text-align: center;
+        outline: none;
+        text-decoration: none !important;
+        color: black !important;
+        width: 200px;
+        height: 32px;
+        border-radius: 16px;
+        background-color: lightgray;
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+
+      .socialbutton:hover {
+        background-color: rgba(211, 211, 211, 0.9);
+        padding: 10px 5px 30px 5px;
+        margin: 5px;
+        text-align: center;
+        outline: none;
+        text-decoration: none;
+        color: black;
+        width: 200px;
+        height: 32px;
+        border-radius: 16px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+

@@ -1,0 +1,38 @@
+
+// Import utilities
+
+@import "../utilities/fonts";
+@import "../utilities/variables";
+@import "../utilities/styles-guul";
+
+#servicios {
+    background-color: grey;
+    text-align: center;
+    padding: 20px;
+
+    #servicios-contenedor {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+
+        #serv1, #serv2, #serv3, #serv4 {
+            width: 400px;
+            margin: 10px;
+            padding: 10px;
+
+            img {
+                width: 100%;
+                padding: 10px;
+                border-top-left-radius: 80px;
+                border-bottom-right-radius: 80px;
+            }
+
+            h3 {
+                width: 100%;
+                padding: 10px;
+
+            }
+        }
+    }
+}

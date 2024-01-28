@@ -1,0 +1,155 @@
+
+// Import utilities
+
+@import "../utilities/fonts";
+@import "../utilities/variables";
+@import "../utilities/styles-guul";
+
+/* Media Querys */
+@media only screen and (max-device-width: 500px){
+    #contact {
+        #contact-just {
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (min-device-width: 501px) and (max-device-width: 960px){
+    #contact {
+        #contact-just {
+            width: 90%;
+        }
+    }
+}
+
+@media only screen and (min-device-width: 961px) and (max-device-width: 1370px){
+    #contact {
+        #contact-just {
+            width: 75%;
+        }
+    }
+}
+
+@media only screen and (min-device-width: 1371px){
+    #contact {
+        #contact-just {
+            width: 75%;
+        }
+    }
+}
+
+
+#contact {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    #contact-just {
+        display: flex;
+        flex-direction: column;
+
+        #contact-contenedor1 {
+            padding: 20px;
+
+            h2 {
+                width: 100%;
+                padding: 10px;
+            }
+
+            form {
+                #contact-form-div {
+                    margin: 5px;
+                    padding: 5px;
+                    display: flex;
+                    flex-direction: column;
+
+                    input, textarea {
+                        background-color: lightgrey;
+                        padding: 10px 10px 10px 15px;
+                        border-top-left-radius: 10px;
+                        border-bottom-right-radius: 10px;
+                    }
+                }
+
+                #contact-form-tyc {
+                    margin: 10px;
+                    padding: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    div {
+                        padding: 10px;
+                        display: flex;
+                    } 
+                    
+                }
+
+                .custom-form-check-input.form-check-input {
+                    border-color: black;
+                }
+
+                .custom-form-check-input.form-check-input:checked {
+                    background-color: black;
+                    border-color: black;
+                    box-shadow: $form-box-shadow;
+                }
+
+                .custom-form-check-input.form-check-input:focus {
+                    border-color: black;
+                    box-shadow: $form-box-shadow;
+                }
+
+                #contact-form-boton {
+                    margin: 5px;
+                    padding: 5px;
+                    display: flex;
+                    flex-direction: column;
+
+                    button {
+                        background-color: lightgrey;
+                        text-align: center;
+                        width: 100%;
+                        padding: 10px;
+                        border-top-left-radius: 10px;
+                        border-bottom-right-radius: 10px;
+                        cursor: pointer;
+                        font-weight: bold;
+                        font-size: 1em;
+                    }
+
+                    button:hover {
+                        background-color: rgba(155, 155, 155, 0.753);
+                        text-align: center;
+                        width: 100%;
+                        padding: 10px;
+                        border-top-left-radius: 10px;
+                        border-bottom-right-radius: 10px;
+                        cursor: pointer;
+                        font-weight: bold;
+                        font-size: 1em;
+                    }
+                }
+            }
+
+            .custom-form-control.form-control:focus {
+                border-color: black;
+                box-shadow: $form-box-shadow;
+            } 
+        }
+
+        #contact-contenedor2 {
+            padding: 20px;
+
+            iframe {
+                width: 100%;
+                border-top-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+            }
+        
+        }
+    }
+}
+

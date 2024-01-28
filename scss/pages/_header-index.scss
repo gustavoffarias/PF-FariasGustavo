@@ -1,8 +1,107 @@
 
 // Import utilities
 
-@import "utilities/fonts";
-@import "utilities/variables";
+@import "../utilities/fonts";
+@import "../utilities/variables";
+
+/* Media Querys */
+
+@media only screen and (max-device-width: 500px){
+    #header-index { 
+        nav {
+            div {
+                div {
+                    ul {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    
+    }
+
+     #encabezado-inicio {
+        padding: 15%;
+    }
+
+    video {
+        height: 10%;
+    }
+    
+}
+
+@media only screen and (min-device-width: 501px) and (max-device-width: 960px){
+
+    #header-index { 
+        nav {
+            div {
+                div {
+                    ul {
+                        width: 75%;
+                    }
+                }
+            }
+        }
+    
+    }
+
+    #encabezado-inicio {
+        padding: 20%;
+    }
+
+    video {
+        height: 25%;
+    }
+    
+}
+
+@media only screen and (min-device-width: 961px) and (max-device-width: 1370px){
+    #header-index { 
+        nav {
+            div {
+                div {
+                    ul {
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    
+    }
+
+    #encabezado-inicio {
+        padding: 11%;
+    }
+
+    video {
+        height: 75%;
+    }
+    
+}
+
+@media only screen and (min-device-width: 1371px){
+    #header-index { 
+        nav {
+            div {
+                div {
+                    ul {
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    
+    }
+
+    #encabezado-inicio {
+        padding: 14%;
+    }
+
+    video {
+        height: 75%;
+    }
+    
+}
 
 /*
 header {
@@ -14,6 +113,7 @@ header {
     padding: 1%;
 }
 */
+
 #header-index {
     width: 100%;
     display: flex;
@@ -79,11 +179,21 @@ header {
 
     #encabezado-inicio {
         width: 100%;
+        height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
     }
 
+}
+
+video {
+    position:absolute;
+    z-index: -2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit:cover;
 }
 
