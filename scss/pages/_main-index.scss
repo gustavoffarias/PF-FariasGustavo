@@ -4,16 +4,46 @@
 @import "../utilities/variables";
 @import "../utilities/styles-guul";
 
+/* Media Querys */
+
+@media only screen and (max-device-width: 500px){
+    #intro {
+        h2 {
+            width: 90%;
+        }
+    }
+}
+
+@media only screen and (min-device-width: 501px) and (max-device-width: 960px){
+    #intro {
+        h2 {
+            width: 90%;
+        }
+    }
+}
+
+@media only screen and (min-device-width: 961px) and (max-device-width: 1370px){
+    #intro {
+        h2 {
+            width: 75%;
+        }
+    }
+}
+
+@media only screen and (min-device-width: 1371px){
+ #intro {
+        h2 {
+            width: 60%;
+        }
+    }
+}
+
 #intro {
     background-color: white;
     text-align: center;
     padding: 5%;
     display: flex;
     justify-content: center;
-
-    h2 {
-    width: 50%;
-    }
 }
 
 #servicios {

@@ -5,6 +5,59 @@
 @import "../utilities/variables";
 @import "../utilities/styles-guul";
 
+/* Media Querys */
+
+@media only screen and (max-device-width: 500px){
+    #header-index { 
+        nav {
+            div {
+                div {
+                    width: auto;
+                }
+            }
+        }
+    } 
+    
+}
+
+@media only screen and (min-device-width: 501px) and (max-device-width: 960px){
+    #header-index { 
+        nav {
+            div {
+                div {
+                    width: 50%;
+                }
+            }
+        }
+    } 
+    
+}
+
+@media only screen and (min-device-width: 961px) and (max-device-width: 1370px){
+    #header-index { 
+        nav {
+            div {
+                div {
+                    width: 50%;
+                }
+            }
+        }
+    } 
+    
+}
+
+@media only screen and (min-device-width: 1371px){
+    #header-index { 
+        nav {
+            div {
+                div {
+                    width: 50%;
+                }
+            }
+        }
+    }    
+}
+
 #header-pages {
     background-color: black;
     width: 100%;
@@ -20,10 +73,6 @@
         justify-content: space-between;
         
         div {
-            div {
-                width: 50%;
-            }
-
             #logo {
                 display: flex;
                 align-items: center;
