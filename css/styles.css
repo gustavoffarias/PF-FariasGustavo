@@ -76,7 +76,7 @@ a {
     height: 24em;
   }
   video {
-    height: 50%;
+    height: 75%;
   }
 }
 @media only screen and (min-device-width: 961px) and (max-device-width: 1370px) {
@@ -90,7 +90,7 @@ a {
     height: 24em;
   }
   video {
-    height: 50%;
+    height: 60%;
   }
 }
 @media only screen and (min-device-width: 1371px) {
@@ -746,7 +746,7 @@ a {
   font-size: 1em;
 }
 #contacto #contacto-contenedor form #contacto-form-boton button:hover {
-  background-color: 0 0 0 0.25rem rgba(155, 155, 155, 0.753);
+  background-color: rgba(155, 155, 155, 0.753);
   text-align: center;
   width: 100%;
   padding: 10px;
