@@ -26,7 +26,7 @@ footer {
         text-align: center;
         outline: none;
         text-decoration: none !important;
-        color: black !important;
+        color: black;
         width: 200px;
         height: 32px;
         border-radius: 16px;
@@ -43,6 +43,51 @@ footer {
         outline: none;
         text-decoration: none;
         color: black;
+        width: 200px;
+        height: 32px;
+        border-radius: 16px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .sb-in.socialbutton:hover {
+        background-color: rgba(9, 103, 197, 0.9);
+        padding: 10px 5px 30px 5px;
+        margin: 5px;
+        text-align: center;
+        outline: none;
+        text-decoration: none;
+        color: white;
+        width: 200px;
+        height: 32px;
+        border-radius: 16px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .sb-fb.socialbutton:hover {
+        background-color: rgba(8, 102, 295, 0.9);
+        padding: 10px 5px 30px 5px;
+        margin: 5px;
+        text-align: center;
+        outline: none;
+        text-decoration: none;
+        color: white;
+        width: 200px;
+        height: 32px;
+        border-radius: 16px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .sb-ig.socialbutton:hover {
+        background-color: rgba(255, 0, 91, 0.9);
+        padding: 10px 5px 30px 5px;
+        margin: 5px;
+        text-align: center;
+        outline: none;
+        text-decoration: none;
+        color: white;
         width: 200px;
         height: 32px;
         border-radius: 16px;

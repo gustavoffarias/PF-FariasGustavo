@@ -10,6 +10,12 @@
     <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- AOS Animate -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <title>guul - Servicios</title>
 </head>
 <body>
@@ -18,8 +24,10 @@
         <nav class="navbar navbar-expand-lg ">
             <div class="container-fluid">
                 <div id="logo">
-                    <img src="../img/guul-logo-celta-negro-1.png" alt="">
-                    <h1>guul Dev</h1>
+                    <a class="nav-link text-white fw-bolder" href="../index.html">
+                        <img src="../img/guul-logo-celta-negro-1.png" alt="">
+                        <h1>guul Dev</h1>
+                    </a>
                 </div>
                 <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -28,7 +36,7 @@
                     <ul class="navbar-nav custom-navbar-nav align-items-center justify-content-between">
                         <li class="nav-item">
                             <a class="nav-link text-white fw-bolder" href="../index.html">Inicio</a></li>
-                        <li class="nav-item">
+                        <li class="nav-item custom-active-pages">
                             <a class="nav-link text-white fw-bolder" href="../pages/services.html">Servicios</a></li>
                         <li class="nav-item">
                             <a class="nav-link text-white fw-bolder" href="../pages/us.html">Nosotros</a></li>
@@ -41,35 +49,50 @@
             </div>
         </nav>
         <div id="encabezado-inicio">
-            <h2 style="color: white;">Servicios</h2>
+            <h2 class="animate__animated animate__fadeInDown" style="color: white;">Servicios</h2>
         </div>
     </header>
 
     <main>
-        <section id="servicios">
-            <div id="servicios-contenedor">
-                <div id="serv1">
+        <section id="services">
+            <div id="services-contenedor">
+                <div data-aos="flip-up" data-aos-duration="3000" id="serv1">
                     <img src="../img/service-1.jpg" alt="">
-                    <h3>Estructuracion de procesos</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem numquam adipisci cupiditate eveniet dolore maxime fuga illum. Harum exercitationem sed, quis, architecto atque doloremque fugit maiores nostrum magni dignissimos provident.</p>
-
+                    <div id="serv1-card-text">
+                        <h3>Estructuracion de procesos</h3>
+                        <p>Analizamos e identificamos cómo pueden mejorar los procesos de cada empresa por medio de las nuevas tecnologías. De forma organizativa o procedimental proporcionamos las herramientas para su transformación digital aportando experiencia y formación relacionada. Desarrollamos soluciones específicas para necesidades concretas por medio de metodologías ágiles que aportan rentabilidad a corto plazo, soluciones de fácil aplicación e implantación y adaptación sencilla para el cliente.</p>
+                        <p>Tras analizar tu empresa, crearemos un informe completo en el que reflejamos la situación en la que se encuentra tu negocio y las soluciones que pueden adaptarse a tu entorno para que sigas creciendo. En Zitelia nos encargamos de elaborar informes exhaustivos para que conozcas a fondo cómo mejorar tu negocio.</p>
+                    </div>
                 </div>
-                <div id="serv2">
+                <div data-aos="flip-up" data-aos-duration="3000" id="serv2">
                     <img src="../img/service-2.jpg" alt="">
-                    <h3>Desarrollo de software</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto voluptas odio consequatur animi doloribus nesciunt, voluptatum facere, amet illum doloremque error itaque provident quae voluptatem? Accusamus maiores in vero corrupti!</p>
-
+                    <div id="serv1-card-text">
+                        <h3>Desarrollo de software</h3>
+                        <p>El uso de la tecnología es uno los pilares más importantes para cualquier compañía, sin importar su tamaño. El desarrollo, la actualización y la implementación de software garantiza que la ejecución de las funciones del negocio de sean forma eficiente, siendo un puente al cumplimiento de sus objetivos.</p>
+                        <p>Desarrollamos software a la medida de nuestros clientes, con los mejores desarrolladores, constante capacitación y actualizacion de nuestros conocimientos. Utilizamos tableros Scrum, nuestro equipo se basa en el factor humano utilizando procesos colaborativos con metodologías ágiles de desarrollo para abordar de una forma más flexible los objetivos acordes a las necesidades de cada uno de los clientes para obtener resultados positivos.</p>
+                    </div>
                 </div>
-                <div id="serv3">
+                <div data-aos="flip-up" data-aos-duration="3000" id="serv3">
                     <img src="../img/service-3.jpg" alt="">
-                    <h3>Desarrollo web</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto voluptas odio consequatur animi doloribus nesciunt, voluptatum facere, amet illum doloremque error itaque provident quae voluptatem? Accusamus maiores in vero corrupti!</p>
-
+                    <div id="serv1-card-text">
+                        <h3>Desarrollo web</h3>
+                        <p>Desarrollamos tu sitio web desde cero. Redactamos los textos, elegimos las imágenes, programamos, diseñamos el sitio y lo cargamos a la web. Combinamos estrategia, diseño y tecnología para construir un sitio web enfocado en fortalecer la presencia digital de tu negocio, en la experiencia de los usuarios y en la generación de contactos potenciales para aumentar tus ventas.</p>
+                        <p>Con tu página web lograrás: tener la presencia digital que tu negocio necesita, generar confianza, destacarte de la competencia, atraer nuevos clientes, una vidriera disponible las 24 horas del día, los siete días de la semana, llevar tu negocio a más ciudades e incluso a otros países.
+                        </p>
+                        <p>¿Qué tipo de negocios necesitan una página web? <br>
+                            Todos los negocios necesitan estar presentes en internet. Hoy en día, el 80% de las personas busca información sobre productos y servicios a través de sitios web o redes sociales antes de realizar una compra. Si tu negocio no cuenta con una página web, estás perdiendo clientes potenciales. No importa si vendés productos o servicios, todos los negocios pueden beneficiarse de tener una presencia online y aumentar su impacto en el mercado actual.
+                        </p>
+                        <p> ¿Por qué tener una página web? <br>
+                            Los usuarios gastan en internet en promedio 7 horas cada día &#40;digital 2022 Global Overview Report&#41;, en Google se realizan 4 millones de búsquedas en un minuto &#40;estudio Data never sleeps&#41;, se proyecta que en 2040 el 95% de las compras se harán online &#40;NASDAQ&#41;
+                        </p>
+                    </div>
                 </div>
-                <div id="serv4">
+                <div data-aos="flip-up" data-aos-duration="3000" id="serv4">
                     <img src="../img/service-4.jpg" alt="">
-                    <h3>Implementacion de Tango Software</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto voluptas odio consequatur animi doloribus nesciunt, voluptatum facere, amet illum doloremque error itaque provident quae voluptatem? Accusamus maiores in vero corrupti!</p>
+                    <div id="serv1-card-text">
+                        <h3>Implementacion de Tango Software</h3>
+                        <p>Tango Gestión hace que obtengas la mayor rentabilidad de tu empresa. dministrá eficientemente todas las operaciones y circuitos de tu negocio, siempre está al día con toda la reglamentación vigente. Te permite conectarte con otras herramientas y dispositivos, es fácil de usar. Te ayuda a decidir, a vender y es líder del mercado, el más utilizado por las empresas argentinas.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -124,9 +147,15 @@
         </div>
     </footer>
 
+    <!-- BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
+    <!-- Iconos -->
     <script src="https://kit.fontawesome.com/65456dd4ba.js" crossorigin="anonymous"></script>
+
+    <!-- AOS Animate -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
 
 </body>
 </html>

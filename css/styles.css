@@ -101,7 +101,7 @@ a {
     width: 50%;
   }
   #encabezado-inicio {
-    height: 35em;
+    height: 25em;
   }
   video {
     height: 75%;
@@ -131,11 +131,11 @@ header {
   align-items: center;
   justify-content: space-between;
 }
-#header-index nav div #logo {
+#header-index nav div #logo a {
   display: flex;
   align-items: center;
 }
-#header-index nav div #logo img, #header-index nav div #logo h1 {
+#header-index nav div #logo a img, #header-index nav div #logo a h1 {
   padding: 5px;
 }
 #header-index nav div .custom-toggler.navbar-toggler {
@@ -227,11 +227,11 @@ a {
   align-items: center;
   justify-content: space-between;
 }
-#header-pages nav div #logo {
+#header-pages nav div #logo a {
   display: flex;
   align-items: center;
 }
-#header-pages nav div #logo img, #header-pages nav div #logo h1 {
+#header-pages nav div #logo a img, #header-pages nav div #logo a h1 {
   padding: 5px;
 }
 #header-pages nav div .custom-toggler.navbar-toggler {
@@ -246,17 +246,23 @@ a {
   align-items: center;
   justify-content: center;
 }
-#header-pages nav div div ul .custom-active {
-  border-radius: 10px;
-  background-color: black;
-  height: 2em;
+#header-pages nav div div ul .custom-active-pages {
+  background-color: rgb(54, 54, 54);
+  height: 100%;
+}
+#header-pages nav div div ul .nav-item:hover {
+  background-color: rgb(37, 37, 37);
+  height: 100%;
 }
 #header-pages nav div div .custom-navbar-nav.navbar-nav {
   display: flex;
   flex-direction: row;
 }
 #header-pages #encabezado-inicio {
-  padding: 10%;
+  padding: 20% 10% 20% 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   background: url("../img/background.jpg");
   background-repeat: no-repeat;
@@ -357,30 +363,118 @@ a {
   color: white;
 }
 
-#servicios {
+/* Media Querys */
+@media only screen and (max-device-width: 500px) {
+  #serv1, #serv2, #serv3, #serv4 {
+    flex-direction: column;
+    align-items: center;
+  }
+  #serv1 img, #serv2 img, #serv3 img, #serv4 img {
+    width: 100%;
+  }
+  #serv1 #serv1-card-text, #serv2 #serv1-card-text, #serv3 #serv1-card-text, #serv4 #serv1-card-text {
+    width: 100%;
+  }
+}
+@media only screen and (min-device-width: 501px) and (max-device-width: 960px) {
+  #serv1, #serv2, #serv3, #serv4 {
+    flex-direction: column;
+    align-items: center;
+  }
+  #serv1 img, #serv2 img, #serv3 img, #serv4 img {
+    width: 85%;
+  }
+  #serv1 #serv1-card-text, #serv2 #serv1-card-text, #serv3 #serv1-card-text, #serv4 #serv1-card-text {
+    width: 85%;
+  }
+}
+@media only screen and (min-device-width: 961px) and (max-device-width: 1370px) {
+  #serv1, #serv3 {
+    flex-direction: row;
+  }
+  #serv1 img, #serv3 img {
+    width: 50%;
+  }
+  #serv1 #serv1-card-text, #serv3 #serv1-card-text {
+    width: 50%;
+  }
+  #serv2, #serv4 {
+    flex-direction: row-reverse;
+  }
+  #serv2 img, #serv4 img {
+    width: 50%;
+  }
+  #serv2 #serv1-card-text, #serv4 #serv1-card-text {
+    width: 50%;
+  }
+}
+@media only screen and (min-device-width: 1371px) {
+  #serv1, #serv3 {
+    flex-direction: row;
+  }
+  #serv1 img, #serv3 img {
+    width: 50%;
+  }
+  #serv1 #serv1-card-text, #serv3 #serv1-card-text {
+    width: 50%;
+  }
+  #serv2, #serv4 {
+    flex-direction: row-reverse;
+  }
+  #serv2 img, #serv4 img {
+    width: 50%;
+  }
+  #serv2 #serv1-card-text, #serv4 #serv1-card-text {
+    width: 50%;
+  }
+}
+#services {
   background-color: grey;
-  text-align: center;
+  text-align: justify;
   padding: 20px;
 }
-#servicios #servicios-contenedor {
+#services #services-contenedor {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
   justify-content: space-around;
 }
-#servicios #servicios-contenedor #serv1, #servicios #servicios-contenedor #serv2, #servicios #servicios-contenedor #serv3, #servicios #servicios-contenedor #serv4 {
-  width: 400px;
-  margin: 10px;
-  padding: 10px;
-}
-#servicios #servicios-contenedor #serv1 img, #servicios #servicios-contenedor #serv2 img, #servicios #servicios-contenedor #serv3 img, #servicios #servicios-contenedor #serv4 img {
+#services #services-contenedor #serv1, #services #services-contenedor #serv3 {
+  display: flex;
   width: 100%;
+  margin: 5px;
+  padding: 5px;
+}
+#services #services-contenedor #serv1 img, #services #services-contenedor #serv3 img {
   padding: 10px;
   border-top-left-radius: 80px;
   border-bottom-right-radius: 80px;
 }
-#servicios #servicios-contenedor #serv1 h3, #servicios #servicios-contenedor #serv2 h3, #servicios #servicios-contenedor #serv3 h3, #servicios #servicios-contenedor #serv4 h3 {
+#services #services-contenedor #serv1 #serv1-card-text, #services #services-contenedor #serv3 #serv1-card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#services #services-contenedor #serv1 #serv1-card-text h3, #services #services-contenedor #serv1 #serv1-card-text p, #services #services-contenedor #serv3 #serv1-card-text h3, #services #services-contenedor #serv3 #serv1-card-text p {
+  padding: 10px;
+}
+#services #services-contenedor #serv2, #services #services-contenedor #serv4 {
+  display: flex;
   width: 100%;
+  margin: 5px;
+  padding: 5px;
+}
+#services #services-contenedor #serv2 img, #services #services-contenedor #serv4 img {
+  padding: 10px;
+  border-top-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+}
+#services #services-contenedor #serv2 #serv1-card-text, #services #services-contenedor #serv4 #serv1-card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#services #services-contenedor #serv2 #serv1-card-text h3, #services #services-contenedor #serv2 #serv1-card-text p, #services #services-contenedor #serv4 #serv1-card-text h3, #services #services-contenedor #serv4 #serv1-card-text p {
   padding: 10px;
 }
 
@@ -494,7 +588,7 @@ a {
 #blog {
   background-color: grey;
   text-align: center;
-  padding: 1% 10% 1% 10%;
+  padding: 1% 5% 1% 5%;
 }
 
 /* Fonts */
@@ -795,7 +889,7 @@ footer .socialbutton {
   text-align: center;
   outline: none;
   text-decoration: none !important;
-  color: black !important;
+  color: black;
   width: 200px;
   height: 32px;
   border-radius: 16px;
@@ -811,6 +905,48 @@ footer .socialbutton:hover {
   outline: none;
   text-decoration: none;
   color: black;
+  width: 200px;
+  height: 32px;
+  border-radius: 16px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+footer .sb-in.socialbutton:hover {
+  background-color: rgba(9, 103, 197, 0.9);
+  padding: 10px 5px 30px 5px;
+  margin: 5px;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  color: white;
+  width: 200px;
+  height: 32px;
+  border-radius: 16px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+footer .sb-fb.socialbutton:hover {
+  background-color: rgba(8, 102, 255, 0.9);
+  padding: 10px 5px 30px 5px;
+  margin: 5px;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  color: white;
+  width: 200px;
+  height: 32px;
+  border-radius: 16px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+footer .sb-ig.socialbutton:hover {
+  background-color: rgba(255, 0, 91, 0.9);
+  padding: 10px 5px 30px 5px;
+  margin: 5px;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  color: white;
   width: 200px;
   height: 32px;
   border-radius: 16px;

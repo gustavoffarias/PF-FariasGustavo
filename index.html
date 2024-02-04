@@ -6,9 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
 
+    <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- AOS Animate -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <title>guul Dev</title>
 </head>
@@ -18,8 +25,10 @@
         <nav class="navbar navbar-expand-lg ">
             <div class="container-fluid">
                 <div id="logo">
-                    <img src="../img/guul-logo-celta-negro-1.png" alt="">
-                    <h1>guul Dev</h1>
+                    <a class="nav-link text-white fw-bolder" href="">
+                        <img src="../img/guul-logo-celta-negro-1.png" alt="">
+                        <h1>guul Dev</h1>
+                    </a>
                 </div>
                 <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -44,33 +53,33 @@
             <source src="./img/background3.mp4" type="video/mp4">
         </video>
         <div id="encabezado-inicio">
-            <h2 style="color: white;">Convertimos tus ideas en realidad</h2>
+            <h2 class="animate__animated animate__fadeInDown" style="color: white;">Convertimos tus ideas en realidad</h2>
         </div>
     </header>
 
     <main>
-        <section id="intro">
-            <h2>Somos un equipo de personas motivadas y convencidas de que la tecnologia llego para ayudarnos a ser mejores.</h2>
+        <section id="intro" class="animate__fadeInUp">
+            <h2 class="animate__animated animate__fadeInUp">Somos un equipo de personas motivadas y convencidas de que la tecnologia llego para ayudarnos a ser mejores.</h2>
         </section>
-        <section id="servicios">
-            <h2>Servicios</h2>
+        <section id="servicios" class="animate_animated animate__fadeIn">
+            <h2 >Servicios</h2>
             <div id="servicios-contenedor">
-                <div class="card-servicios">
+                <div data-aos="fade-up" class="card-servicios">
                     <img src="./img/service-1.jpg" alt="">
                     <h3>Estructuracion de procesos</h3>
                     <a class="btn btn-dark" href="./pages/services.html#serv1">Ver mas...</a>
                 </div>
-                <div class="card-servicios">
+                <div data-aos="fade-up" class="card-servicios">
                     <img src="./img/service-2.jpg" alt="">
                     <h3>Desarrollo de software</h3>
                     <a class="btn btn-outline-dark" href="./pages/services.html#serv2">Ver mas...</a>
                 </div>
-                <div class="card-servicios">
+                <div data-aos="fade-up" class="card-servicios">
                     <img src="./img/service-3.jpg" alt="">
                     <h3>Desarrollo web</h3>
                     <a class="btn btn-dark" href="./pages/services.html#serv3">Ver mas...</a>
                 </div>
-                <div class="card-servicios">
+                <div data-aos="fade-up" class="card-servicios">
                     <img src="./img/service-4.jpg" alt="">
                     <h3>Implementacion de Tango Software</h3>
                     <a class="btn btn-outline-dark" href="./pages/services.html#serv4">Ver mas...</a>
@@ -117,21 +126,27 @@
 
     <footer>
         <div id="footer-container">
-            <a class="socialbutton" href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=guul-dev" target="_blank">
+            <a class="socialbutton sb-in" href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=guul-dev" target="_blank">
                 <i class="fa-brands fa-linkedin"></i>
                 LinkedIn</a>
-            <a class="socialbutton" href="https://www.facebook.com/GUULdevelopment/" target="_blank">
+            <a class="socialbutton sb-fb" href="https://www.facebook.com/GUULdevelopment/" target="_blank">
                 <i class="fa-brands fa-facebook"></i>
                 Facebook</a>
-            <a class="socialbutton" href="https://www.instagram.com/guul.dev?utm_source=qr&igshid=MzNlNGNkZWQ4Mg==" target="_blank">
+            <a class="socialbutton sb-ig" href="https://www.instagram.com/guul.dev?utm_source=qr&igshid=MzNlNGNkZWQ4Mg==" target="_blank">
                 <i class="fa-brands fa-instagram"></i>
                 Instagram</a>    
         </div>
     </footer>
 
+    <!-- BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
+    <!-- Iconos -->
     <script src="https://kit.fontawesome.com/65456dd4ba.js" crossorigin="anonymous"></script>
+
+    <!-- AOS Animate -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
 
 </body>
 </html>

@@ -102,7 +102,7 @@
     }
 
     #encabezado-inicio {
-        height: 35em;
+        height: 25em;
     }
 
     video {
@@ -138,11 +138,13 @@ header {
         
         div {
             #logo {
-                display: flex;
-                align-items: center;
-
-                img, h1 {
-                    padding: 5px;
+                a {
+                    display: flex;
+                    align-items: center;
+    
+                    img, h1 {
+                        padding: 5px;
+                    }
                 }
             }
 
