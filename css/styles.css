@@ -448,6 +448,7 @@ a {
   padding: 10px;
   border-top-left-radius: 80px;
   border-bottom-right-radius: 80px;
+  object-fit: cover;
 }
 #services #services-contenedor #serv1 #serv1-card-text, #services #services-contenedor #serv3 #serv1-card-text {
   display: flex;
@@ -467,6 +468,7 @@ a {
   padding: 10px;
   border-top-left-radius: 80px;
   border-bottom-right-radius: 80px;
+  object-fit: cover;
 }
 #services #services-contenedor #serv2 #serv1-card-text, #services #services-contenedor #serv4 #serv1-card-text {
   display: flex;
