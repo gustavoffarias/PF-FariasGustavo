@@ -159,19 +159,17 @@ header {
   display: flex;
   flex-direction: row;
 }
-#header-index video {
-  position: absolute;
-  z-index: -2;
-  top: 0;
-  left: 0;
-  width: 100%;
-  object-fit: cover;
-}
 #header-index #encabezado-inicio {
+  padding: 20% 10% 20% 10%;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  background: url("../img/background.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
 }
 
 /* Fonts */
@@ -431,13 +429,14 @@ a {
 #services {
   background-color: grey;
   text-align: justify;
-  padding: 20px;
+  padding: 1%;
 }
 #services #services-contenedor {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  padding: 7%;
 }
 #services #services-contenedor #serv1, #services #services-contenedor #serv3 {
   display: flex;
@@ -589,6 +588,11 @@ a {
   background-color: grey;
   text-align: center;
   padding: 1% 5% 1% 5%;
+}
+#blog img {
+  padding: 5px;
+  border-top-left-radius: 80px;
+  border-bottom-right-radius: 80px;
 }
 
 /* Fonts */

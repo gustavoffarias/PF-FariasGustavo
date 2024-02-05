@@ -99,13 +99,14 @@
 #services {
     background-color: grey;
     text-align: justify ;
-    padding: 20px;
+    padding: 1%;
 
     #services-contenedor {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
+        padding: 7%;
 
         #serv1, #serv3 {
             display: flex;

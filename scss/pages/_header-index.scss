@@ -181,20 +181,18 @@ header {
         }
     }
 
-    video {
-        position:absolute;
-        z-index: -2;
-        top: 0;
-        left: 0;
-        width: 100%;
-        object-fit:cover;
-    }    
-
     #encabezado-inicio {
+        padding: 20% 10% 20% 10%;
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
+        background: url('../img/background.gif');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+    
     }
 
 }
