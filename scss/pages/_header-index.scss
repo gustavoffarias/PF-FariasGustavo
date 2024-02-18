@@ -159,8 +159,10 @@ header {
 
             div {
                 ul {
+
                     li {
                         padding: 2%;
+                        width: 6em;
                         display: flex;
                         align-items: center;
                         justify-content: center;
@@ -169,6 +171,12 @@ header {
                     .custom-active {
                         border-radius: 10px;
                         background-color: black;
+                        height: 2em;
+                    }
+
+                    .nav-item:hover {
+                        background-color: rgb(37, 37, 37);
+                        border-radius: 10px;
                         height: 2em;
                     }
                 }

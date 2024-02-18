@@ -146,6 +146,7 @@ header {
 }
 #header-index nav div div ul li {
   padding: 2%;
+  width: 6em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -153,6 +154,11 @@ header {
 #header-index nav div div ul .custom-active {
   border-radius: 10px;
   background-color: black;
+  height: 2em;
+}
+#header-index nav div div ul .nav-item:hover {
+  background-color: rgb(37, 37, 37);
+  border-radius: 10px;
   height: 2em;
 }
 #header-index nav div div .custom-navbar-nav.navbar-nav {
@@ -240,6 +246,7 @@ a {
 }
 #header-pages nav div div ul li {
   padding: 2%;
+  width: 6em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -591,7 +598,11 @@ a {
   text-align: center;
   padding: 1% 5% 1% 5%;
 }
-#blog img {
+#blog .custom-card {
+  border-top-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+}
+#blog .custom-card img {
   padding: 5px;
   border-top-left-radius: 80px;
   border-bottom-right-radius: 80px;
